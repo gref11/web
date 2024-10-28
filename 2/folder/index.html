@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/index.js" defer></script>
+</head>
+<body>
+    <div class="parallax-container top-container">
+        <img class="parallax" id="parallax2" src="src/img/parallax2.png" alt="">
+        <img class="parallax" id="parallax3b" src="src/img/parallax3b.png" alt="">
+        <img class="parallax" id="parallax3a" src="src/img/parallax3a.png" alt="">
+    </div>
+    <header>
+        <img id="logo" src="src/img/logo1.png" alt="">
+        <h1 id="title">Задание 2</h1>
+        <nav>
+            <div class="nav-item" id="menu">
+                <span>Меню ∨</span>
+                <div id="menu-list" class="hidden">
+                    <a><span href="">Ссылки</span></a>
+                    <a><span href="">Таблица</span></a>
+                    <a><span href="">Форма</span></a>
+                </div>
+            </div>
+            <a href="https://github.com/gref11" target="_blank" class="nav-item">
+                <span>GitHub</span>
+            </a>
+            <a href="https://vk.com/grefalb" target="_blank" class="nav-item">
+                <span>VK</span>
+            </a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Список гиперссылок</h2>
+        <ul>
+            <li><a href="http://kubsu.ru/">КубГУ</a></li>
+            <li><a href="https://kubsu.ru/">КубГУ(защищено)</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B_%D0%B2_%D1%81%D0%B0%D0%B4%D1%83">
+                <img src="src/img/mone.jpg" style="height: 200px;" alt="Клод Моне, женщины в саду">
+            </a></li>
+            <li><a href="internal.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#title">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="https://www.google.com/search?q=%D0%BA%D1%83%D0%B1%D0%B3%D1%83&sca_esv=2abbba4047a5d337&sca_upv=1">Ссылка с тремя параметрами в URL</a></li>
+            <li><a href="index.html?id=asd">Ссылка с параметром id в URL</a></li>
+            <li><a href="internal.html">Ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="about/about.html">Ссылка на страницу в каталоге about</a></li>
+            <li><a href="../external.html">Ссылка на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../external.html">Ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+            <li>Здесь есть <a href="../external.html">ссылка</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B_%D0%B2_%D1%81%D0%B0%D0%B4%D1%83#Описание">Ссылка на фрагмент страницы стороннего сайта</a></li>
+            <li><map name="map">
+                <area shape="rect" coords="0 0 90 90" href="https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D0%BB%D0%B0%D0%BA%D0%B0" alt="Облако">
+                <area shape="circle" coords="160 95 20" href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D1%8B" alt="Часы">
+            </map>
+        <img src="src/img/600b5707503f057_upscaled.jpeg" usemap="#map" alt="Крепость" width="20%"></li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="index.html" rel="nofollow">Cсылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href="index.html" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+            <li><ol>
+                <li><a href="index.html" title="Подпись 1">Ссылка с подписью</a></li>
+                <li><a href="index.html" title="Подпись 2">Ссылка с другой подписью</a></li>
+            </ol></li>
+            <li><a href="ftp::/username:password@ftp.example.com/document.txt">Cсылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+        <h2>Таблица культур</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Семена</th>
+                    <th colspan="2">Урожай</th>
+                    <th>Цена продажи</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">
+                        <img src="src/img/Cranberry_Seeds.png" alt="">
+                        <br>
+                        Семена клюквы
+                    </td>
+                    <td><img src="src/img/Cranberry_Stage_6.png" alt=""></td>
+                    <td><img src="src/img/Cranberry_Stage_7.png" alt=""></td>
+                    <td>112 з.</td>
+                </tr>
+                <tr>
+                    <td>Всего: 7 дней</td>
+                    <td>Новый урожай каждые 5 дней.</td>
+                    <td>≈18,89 з./сут</td>
+                </tr><tr>
+                    <th rowspan="2">
+                        <img src="src/img/Pumpkin_Seeds.png" alt="">
+                        <br>
+                        Семена Тыквы
+                    </td>
+                    <td colspan="2"><img src="src/img/Pumpkin_Stage_6.png" alt=""></td>
+                    <td>480 з.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Всего: 13 дней</td>
+                    <td>≈16,92 з./сут</td>
+                </tr><tr>
+                    <th rowspan="2">
+                        <img src="src/img/Ancient_Seeds.png" alt="">
+                        <br>
+                        Семена древнего фрукта
+                    </td>
+                    <td><img src="src/img/Ancient_Fruit_Stage_6.png" alt=""></td>
+                    <td><img src="src/img/Ancient_Fruit_Stage_7.png" alt=""></td>
+                    <td>825 з.</td>
+                </tr>
+                <tr>
+                    <td>Всего: 28 дней</td>
+                    <td>Новый урожай каждые 7 дней.</td>
+                    <td>≈57,14 з./сут</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Форма</h2>
+        <form action="">
+            <label for="fio">ФИО </label> <input type="text" name="fio" id="fio"><br>
+            <label for="tel">Телефон </label> <input type="tel" name="tel" id="tel"><br>
+            <label for="email">e-mail </label> <input type="email" name="email" id="email"><br>
+            <label for="date">Дата рождения </label><input type="date" name="date" id="date"><br>
+            <label for="sex">Пол </label>
+            <select name="sex" id="sex">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select><br>
+            <label for="lang">Любимый язык программирования</label><br>
+            <select id="lang" name="lang" multiple="multiple">
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+            </select><br>
+            <label for="bio">Биография</label><br>
+            <textarea name="bio" id="bio"></textarea><br>
+            <label for="check">С контрактом ознакомлен(а) </label>
+            <input type="checkbox" name="check" id="check"><br>
+            <button type="submit">Сохранить</button>
+        </form>
+    </div>
+    <footer>
+            <img class="footer-bg" src="src/img/parallax4.png" alt="">
+            <span>(c) Альберт Греф</span>
+    </footer>
+</body>
+</html>
