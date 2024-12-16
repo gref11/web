@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Задание 5</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/index.js" defer></script>
+</head>
+<body>
+    <div class="parallax-container top-container">
+        <img class="parallax" id="parallax2" src="src/img/parallax2.png" alt="">
+        <img class="parallax" id="parallax3b" src="src/img/parallax3b.png" alt="">
+        <img class="parallax" id="parallax3a" src="src/img/parallax3a.png" alt="">
+    </div>
+    <header>
+        <div class="title-cont">
+            <img id="logo" src="src/img/logo1.png" alt="">
+            <h1 id="title">Задание 5</h1>
+        </div>
+        <nav>
+            <div class="nav-item" id="menu">
+                <span>Меню ∨</span>
+                <div id="menu-list" class="hidden">
+                    <a href="#culture-table"><span>Таблица</span></a>
+                    <a href="#order-form"><span>Cемена</span></a>
+                </div>
+            </div>
+            <a href="https://github.com/gref11" target="_blank" class="nav-item">
+                <span>GitHub</span>
+            </a>
+            <a href="https://vk.com/grefalb" target="_blank" class="nav-item">
+                <span>VK</span>
+            </a>
+        </nav>
+    </header>
+    <section class="container">
+        <article id="culture-table">
+            <h2>Таблица культур</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Семена</th>
+                        <th colspan="2">Урожай</th>
+                        <th>Цена продажи</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">
+                            <img src="src/img/Cranberry_Seeds.png" alt="">
+                            <br>
+                            Семена клюквы
+                        </td>
+                        <td><img src="src/img/Cranberry_Stage_6.png" alt=""></td>
+                        <td><img src="src/img/Cranberry_Stage_7.png" alt=""></td>
+                        <td>112 з.</td>
+                    </tr>
+                    <tr>
+                        <td>Всего: 7 дней</td>
+                        <td>Новый урожай каждые 5 дней.</td>
+                        <td>≈18,89 з./сут</td>
+                    </tr><tr>
+                        <th rowspan="2">
+                            <img src="src/img/Pumpkin_Seeds.png" alt="">
+                            <br>
+                            Семена Тыквы
+                        </td>
+                        <td colspan="2"><img src="src/img/Pumpkin_Stage_6.png" alt=""></td>
+                        <td>480 з.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Всего: 13 дней</td>
+                        <td>≈16,92 з./сут</td>
+                    </tr><tr>
+                        <th rowspan="2">
+                            <img src="src/img/Ancient_Seeds.png" alt="">
+                            <br>
+                            Семена древнего фрукта
+                        </td>
+                        <td><img src="src/img/Ancient_Fruit_Stage_6.png" alt=""></td>
+                        <td><img src="src/img/Ancient_Fruit_Stage_7.png" alt=""></td>
+                        <td>825 з.</td>
+                    </tr>
+                    <tr>
+                        <td>Всего: 28 дней</td>
+                        <td>Новый урожай каждые 7 дней.</td>
+                        <td>≈57,14 з./сут</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article id="order-form">
+            <h2>Калькулятор стоимости семян</h2>
+            <form id="price-form">
+                <div class="card-list">
+                    <input type="radio" name="r" id="r1" value="240">
+                    <label class="radio-card" for="r1">
+                        <img src="src/img/Cranberry_Seeds.png" alt="">
+                        <br>
+                        Семена клюквы
+                        <br>
+                        240 з.
+                    </label>
+                    <input type="radio" name="r" id="r2" value="100">
+                    <label class="radio-card" for="r2">
+                        <img src="src/img/Pumpkin_Seeds.png" alt="">
+                        <br>
+                        Семена тыквы
+                        <br>
+                        100 з.
+                    </label>
+                    <input type="radio" name="r" id="r3" value="780">
+                    <label class="radio-card" for="r3">
+                        <img src="src/img/Ancient_Seeds.png" alt="">
+                        <br>
+                        Семена древнего плода
+                        <br>
+                        780 з.
+                    </label>
+                </div>
+                <label for="numb">Количество </label> <input type="text" name="numb" id="numb"><br>
+                <button type="submit">Рассчитать</button>
+                <br>
+                Цена: <span id="price">0</span> з.
+            </form>
+        </article>
+    </section>
+    <footer>
+        <img class="footer-bg" src="src/img/parallax4.png" alt="">
+        <span>(c) Альберт Греф</span>
+    </footer>
+</body>
+</html>
