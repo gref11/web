@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-    <title>Задание 6</title>
+    <title>Задание 7</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/index.js" defer></script>
 </head>
@@ -16,7 +16,7 @@
     <header>
         <div class="title-cont">
             <img id="logo" src="src/img/logo1.png" alt="">
-            <h1 id="title">Задание 6</h1>
+            <h1 id="title">Задание 7</h1>
         </div>
         <nav>
             <div class="nav-item" id="menu">
@@ -25,6 +25,7 @@
                     <a href="#culture-table"><span>Таблица</span></a>
                     <a href="#product-form"><span>Cемена</span></a>
                     <a href="#service-form"><span>Здания</span></a>
+                    <a href="#service-form"><span>Галлерея</span></a>
                 </div>
             </div>
             <a href="https://github.com/gref11" target="_blank" class="nav-item">
@@ -170,6 +171,30 @@
                 <br>
                 Цена: <span class="price">0</span> з.
             </form>
+        </article>
+        <article>
+            <h2>Галлерея</h2>
+            <div class="gallery vertical-container">
+                <div class="gorizontal-container">
+                    <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="gallery-container">
+                        <div class="gallery-images">
+                            <img src="src/img/screen1.jpg" alt="Изображение 1">
+                            <img src="src/img/screen2.jpg" alt="Изображение 2">
+                            <img src="src/img/screen3.jpg" alt="Изображение 3">
+                            <img src="src/img/screen4.jpg" alt="Изображение 4">
+                            <img src="src/img/screen5.jpg" alt="Изображение 5">
+                            <img src="src/img/screen6.jpg" alt="Изображение 6">
+                            <img src="src/img/screen7.jpg" alt="Изображение 7">
+                            <img src="src/img/screen8.jpg" alt="Изображение 8">
+                        </div>
+                    </div>
+                    <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+                <div class="pager">
+                    <span id="currentPage">1</span> / <span id="totalPages">8</span>
+                </div>
+            </div>
         </article>
     </section>
     <footer>

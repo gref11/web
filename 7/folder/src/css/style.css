@@ -299,6 +299,80 @@ input[type="radio"]:checked + label {
     flex-wrap: wrap;
 }
 
+.gallery {
+    display: flex;
+    width: 80%;
+    background-color: rgba(236, 177, 118, 0.6);
+    padding: 1em;
+    align-items: center;
+    border-radius: 1em;
+}
+
+.gallery .gorizontal-container {
+    align-items: center;
+    width: fit-content;
+    justify-content: space-around;
+}
+
+.gallery-container {
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 0.5em;
+}
+
+.gallery-images img {
+    width: 33.33%; /* Для отображения трех изображений на экране */
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.pager {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.gorizontal-container {
+    display: flex;
+    gap: 0.5em;
+}
+
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 800px) {
+    .gallery img {
+        width: 100%; /* Для отображения одного изображения на экране */
+    }
+}
+
 @media screen and (min-width: 800px){
 
     header nav {
