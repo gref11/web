@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-    <title>Задание 7</title>
+    <title>Задание 8</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/index.js" defer></script>
 </head>
@@ -16,7 +16,7 @@
     <header>
         <div class="title-cont">
             <img id="logo" src="src/img/logo1.png" alt="">
-            <h1 id="title">Задание 7</h1>
+            <h1 id="title">Задание 8</h1>
         </div>
         <nav>
             <div class="nav-item" id="menu">
@@ -196,10 +196,43 @@
                 </div>
             </div>
         </article>
+        <br>
+        <button id="openContactForm">Обратная связь</button>
     </section>
     <footer>
         <img class="footer-bg" src="src/img/parallax4.png" alt="">
         <span>(c) Альберт Греф</span>
     </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content container">
+            <button class="close">&times;</button>
+            <h2>Обратная связь</h2>
+            <form id="contactForm">
+                <label for="fullName">ФИО:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="organization">Организация:</label>
+                <input type="text" id="organization" name="organization" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <label>
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    Согласен с политикой обработки персональных данных
+                </label>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    </div>
 </body>
 </html>
