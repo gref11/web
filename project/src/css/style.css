@@ -1,0 +1,104 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    width: fit-content;
+    text-wrap: nowrap;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1180px;
+    width: 100%;
+    gap: 2em;
+}
+
+.h-f {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+.pv15 {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.justify-s-b {
+    justify-content: space-between;
+}
+
+.justify-l {
+    justify-content: start;
+}
+
+#mobile-header {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    padding: 1.5em;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    overflow-y: hidden;
+    color: white;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#header-logo {
+    height: 1.5em;
+    float: left;
+}
+
+.bg-img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+
+}
+
+.right {
+    position: absolute;
+    right: 0;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 900;
+}
+
+.p-18 {
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    
+}
