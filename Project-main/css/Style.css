@@ -11,6 +11,44 @@
     display: block;
   }
 
+ .rela {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .video-background {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: max-content;
+    z-index: -1000;
+  }
+
+  .bg-img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+    overflow-y: hidden;
+}
+  #myVideo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1000;
+      transform: translateX(-50%) translateY(-50%);
+  }
+
+
   a {
     background-color: transparent;
   }
